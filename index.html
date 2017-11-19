@@ -1,0 +1,138 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<!-- Meta tag for bootstrap scaling --><meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- jQuery --><script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+	<!-- Bootstrap JS --><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> 
+	<!-- Bootstrap CSS --><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- My JS --><script type="text/javascript" src="Assets/javascript/game.js"></script>
+	<!-- My CSS --><link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Loved+by+the+King' rel='stylesheet' type='text/css'>
+	<title>Hangman</title>
+</head>
+
+<body>
+	<!-- Container start -->
+	<div class="container-fluid">
+
+		<!-- Header -->
+		<div id="Header">
+			<div class = "row">
+				<div class = "col-xs-5"></div>
+				<div class="col-xs-1">
+					<h2 id="the">The</h2>
+				</div>
+				<div class="col-xs-6"></div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-11">
+					<h1 class="text-center">Fresh</h1>
+				</div>
+				<div class = "col-xs-1"></div>
+
+			</div>
+
+			<div class="row">
+				<div class = "col-xs-1"></div>
+				<div class="col-xs-11">
+					<h1 class="text-center">Prince</h1>
+				</div>
+			</div>
+
+			<div class = "row">
+				<div class="col-xs-6"></div>
+				<div class="col-xs-2">
+					<h2 id="hangman">of Hangman.</h2>
+				</div>
+				<div class = "col-xs-4"></div>
+			</div>
+		</div>
+		<!-- /Header -->
+
+
+		<!-- Main body div -->
+		<div class="row" id="mainDiv">
+			<div class="col-xs-1" class="sideBar"></div>
+				<div class="col-xs-10">
+
+					<!-- Start Button-->
+					<br>
+					<button type="button" class="btn btn-default btn-lg btn-block" id="startButton">Start new game</button>
+					<br>
+					<!-- /Start Button -->
+
+					<!-- Hangman game panel -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class = "text-center" class="panel-title">Guess the character:</h3>
+			  			</div>
+			  			<div class="panel-body">
+			  				<p class = "text-center" id="game"></p>
+			  			</div>
+					</div>
+					<!-- /Hangman game panel -->
+
+					<!-- Game supplimentary meta-row -->
+					<div class="row">
+						<div class="col-xs-6" >
+							<!-- Alert div -->
+							<div class="row" id="infoDiv">
+							</div>
+							<!-- /Alert div -->
+
+							<!-- Character image div -->
+							<div class="row" id="charDiv">
+							</div>	
+							<!-- /Character image div -->
+						</div>
+
+						<!-- Game stats div -->
+						<div class="col-xs-6" class="data">
+
+							<!-- Guesses Remaining -->
+							<div class="panel panel-default">
+		  						<div class="panel-heading">Guesses remaining:</div>
+		  						<div class="panel-body">
+		    						<p id="remainingGuesses"></p>
+		  						</div>
+							</div>
+							<!-- /Guesses Remaining -->
+
+							<!-- Letters Guessed -->
+							<div class="panel panel-default">
+		  						<div class="panel-heading">Letters already guessed:</div>
+		  						<div class="panel-body">
+		    						<p id="alreadyGuessed"></p>
+		  						</div>
+							</div>
+							<!-- /Letters Guessed -->
+
+							<!-- Games won -->
+							<div class="panel panel-default">
+		  						<div class="panel-heading">Games won:</div>
+		  						<div class="panel-body">
+		    						<p id="gamesWon"></p>
+		  						</div>
+							</div>
+							<!-- /Games won -->
+
+						</div>
+						<!-- /Game stats div -->
+
+					</div>
+					<!-- Game supplimentary meta-row -->
+
+
+				</div>
+			<div class="col-xs-1" class="sideBar"></div>
+		</div>
+		<!-- Main body div -->
+
+	<!-- /Container -->
+	</div>
+
+
+</body>
+</html>
